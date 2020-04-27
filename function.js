@@ -1,5 +1,5 @@
 //CLASSWORK
-let checkNumber = num => {
+const checkNumber = num => {
     if (num > 10) {
         return num / 2
     } else {
@@ -12,15 +12,15 @@ console.log(checkNumber(insertNum))
 // HOMEWORK
 
 //1. Напишіть функцію, що повертає куб числа.
-let calcCube = num => num ** 3;
+const calcCube = num => num ** 3;
 console.log(calcCube())
 
 //2. Напишіть функцію, що додає перше число до другого і ділить результат на третє число.
-let calcOperation = (a, b, c) => (a + b) / c;
+const calcOperation = (a, b, c) => (a + b) / c;
 console.log(calcOperation(-2, 3, 2));
 
 //3. Напишіть функцію, що приймає число від 1 до 7 і повертає відповідну назву дня (українською).
-let showDay = number => {
+const showDay = number => {
     switch (number) {
         case 1:
             return 'Понеділок'
@@ -50,7 +50,7 @@ let showDay = number => {
 console.log(showDay(2));
 
 //4. Реалізуйте функцію знаходження факторіала
-let calcFactorial = number => {
+const calcFactorial = number => {
     let factorial;
     if (number < 0) {
         return -1;
@@ -68,13 +68,13 @@ console.log(calcFactorial(5));
 //і повертає це число в секундах.
 
 // якщо не в межах одного дня 
-let calcSeconds = (hours, minutes, seconds) => {
+const calcSeconds = (hours, minutes, seconds) => {
     let totalSeconds = hours * minutes * seconds;
     return `The total result is ${totalSeconds} seconds`
 }
 
 // якщо в межах одного дня 
-let calcSecondsDay = (hours, minutes, seconds) => {
+const calcSecondsDay = (hours, minutes, seconds) => {
     if (hours <= 23 && minutes <= 59 && seconds <= 59) {
         let totalSeconds = hours * minutes * seconds;
         return `The total result is ${totalSeconds} seconds`
@@ -91,7 +91,7 @@ console.log(calcSecondsDay(24, 57, 23))
 //перетворює їх у години хвилини та секунди у форматі «гг:хх:сс». 
 //якщо кількість годин більша за 23.59.59 - вивести повідомлення "Більше одного дня". 
 
-let calcDay = (seconds) => {
+const calcDay = (seconds) => {
     if (seconds > 24 * 3600) {
         return 'Exceeded one day'
     } else {
