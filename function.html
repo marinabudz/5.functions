@@ -1,8 +1,43 @@
 <html>
   <head>
     <meta charset="UTF-8" />
+    <style>
+      .function-item {
+        width: 50%;
+        margin-right: auto;
+        margin-left: auto;
+        font-size: 18px;
+        background-color: bisque;
+        color: black;
+        border: 2px solid black;
+        margin-top: 20%;
+        text-align: center;
+        padding-top: 3%;
+        padding-bottom: 3%;
+      }
+      .function-item__description {
+        padding-top: 5%;
+      }
+    </style>
   </head>
   <body>
+    <div class="function-item">
+      <div>Arrow function</div>
+      <div class="function-item__description">
+        Shorter way to write functions as remove the need to type out the
+        keyword function every time you need to create a function
+      </div>
+      <div class="function-item__description">
+        Do not have their own this(Object Methods)
+      </div>
+      <div class="function-item__description">
+        Can not be called using the ‘new’ keyword as they are only callable and
+        not constructible.
+      </div>
+      <div class="function-item__description">
+        Arrow functions do not have an arguments binding.
+      </div>
+    </div>
     <script src="function.js"></script>
   </body>
 </html>
